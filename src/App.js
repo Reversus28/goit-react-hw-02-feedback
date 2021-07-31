@@ -39,8 +39,7 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     const total = this.handleTotalAmount();
     const positivePercentage = this.countPositiveFeedback();
-    console.log("App ~ positivePercentage", positivePercentage);
-    console.log("App ~ total", total);
+
     return (
       <div className="App">
         <Section title={"Please leave feedback"}>
@@ -57,7 +56,7 @@ export class App extends Component {
             bad={bad}
             total={total}
             positivePercentage={positivePercentage}
-          ></Statistics>
+          />
         </Section>
       </div>
     );
